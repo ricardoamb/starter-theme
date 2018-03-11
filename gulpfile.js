@@ -57,7 +57,8 @@ var jsDist = './assets/js/';
 var jsWatch = 'src/js/**/**/*.js';
 var jsDependencies = [
     './js/navigation.js',
-    ',/js/skip-link-focus-fix.js',
+    './js/skip-link-focus-fix.js',
+    './js/jquery.min.js',
     './src/js/app.js'
 ];
 

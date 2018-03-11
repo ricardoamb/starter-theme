@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"app.min.css","sourcesContent":[]}
+{"version":3,"sources":["base/_styles.sass"],"names":[],"mappings":"AAAA,EACE,8BAAA,AACA,sBAAA,oBAAqB,CAAI,EAGzB,oBAAqB,CAAI","file":"app.min.css","sourcesContent":["* {\n  box-sizing: border-box;\n  word-wrap: break-word; }\n\na {\n  text-decoration: none; }\n"]}
