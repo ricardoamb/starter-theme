@@ -1,0 +1,33 @@
+{
+  "name": "starter-theme",
+  "version": "1.0.0",
+  "description": "Starter Theme based on _underscores for my own Wordpress themes projects",
+  "main": "index.php",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ricardoamb/starter-theme.git"
+  },
+  "keywords": [
+    "starter theme",
+    "starter",
+    "theme"
+  ],
+  "author": "Ricardo Amb",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ricardoamb/starter-theme/issues"
+  },
+  "homepage": "https://github.com/ricardoamb/starter-theme#readme-starter",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0"
+  }
+}
