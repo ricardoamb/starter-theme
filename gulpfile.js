@@ -52,3 +52,32 @@ gulp.task('style', function(){
         .pipe ( sourcemaps.write( './' ) )
         .pipe ( gulp.dest (styleDist) );
 });
+
+var jsDist = './assets/js/';
+var jsWatch = 'src/js/**/**/*.js';
+var jsDependencies = [
+    './js/navigation.js',
+    ',/js/skip-link-focus-fix.js',
+    './src/js/app.js'
+];
+
+gulp.task('js', function() {
+    gulp.src(jsDependencies)
+        .pipe ( sourcemaps.init( { loadMaps: true } ) )
+        .pipe ( concat('app.min.js') ) // concat pulls all our files together before minifying them
+        .pipe ( uglify() )
+        .pipe ( sourcemaps.write( './' ) )
+        .pipe ( gulp.dest(jsDist) )
+});
+
+gulp.task ( 'default' , [
+    'theme',
+    'style',
+    'js'
+]);
+
+gulp.task('watch',['default'],function(){
+    gulp.watch(themeWatch,['theme']);
+    gulp.watch(styleWatch,['style']);
+    gulp.watch(jsWatch,['js']);
+});
