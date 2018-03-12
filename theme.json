@@ -1,0 +1,90 @@
+{
+  "themeName" : "Starter Theme",
+  "themeURI" : "https://agenciasentapua.com.br/starter_theme",
+  "author" : "Agência Sentapúa de Design & Comunicação",
+  "authorURI" : "https://agenciasentapua.com.br",
+  "authorEmail" : "contato@agenciasentapua.com.br",
+  "developerName" : "Ricardo Amb",
+  "developerEmail" : "ricardoamb.dev@gmail.com",
+  "description" : "Wordpress Starter Theme for Agência Sentpúa Themes",
+  "version" : "1.0.0",
+  "license" : "GPL-3.0",
+  "licenseURI" : "https://www.gnu.org/licenses/gpl-3.0.html",
+  "textDomain" : "sentapua_theme",
+  "tags" : "custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready",
+  "googleAPI" : "AIzaSyDBpvuHyuG-4dGAgVpANFF0Xfsu-v7AAbE",
+  "hash" : "aHR0cDovL3JpY2FyZG9hbWIuZ2l0aHViLmlvL3NldHRpbmdzL3NlbnRhcHVhLmpzb24=",
+  "enqueues" : {
+    "styles" : {
+      "font-raleway" : {
+        "fileFolder" : "/",
+        "fileName" : "//fonts.googleapis.com/css?family=Raleway:300,400,700,900",
+        "fileSlug" : "gfont",
+        "fileMedia" : "all",
+        "fileVersion" : "1.0.0",
+        "fileAction" : "remote"
+      },
+      "font-awesome" : {
+        "fileFolder" : "/",
+        "fileName" : "//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
+        "fileSlug" : "font-awesome",
+        "fileMedia" : "all",
+        "fileVersion" : "1.0.0",
+        "fileAction" : "remote"
+      },
+      "style.css" : {
+        "fileFolder" : "/assets/css/",
+        "fileName" : "app.min.css",
+        "fileSlug" : "style",
+        "fileMedia" : "all",
+        "fileVersion" : "1.0.0",
+        "fileAction" : "add"
+      }
+    },
+    "javascript" : {
+      "jquery" : {
+        "fileName" : "jquery",
+        "fileAction" : "deregister"
+      },
+      "app.min.js" : {
+        "fileFolder" : "/assets/js/",
+        "fileName" : "app.min.js",
+        "fileSlug" : "style",
+        "fileVersion" : "1.0.0",
+        "fileFooter" : true,
+        "fileAction" : "add"
+      }
+    }
+  },
+  "jsFiles" : [
+    "./src/js/navigation.js",
+    "./src/js/skip-link-focus-fix.js",
+    "./src/js/jquery.min.js",
+    "./src/js/app.js"
+  ],
+  "buildInPlugins" : {
+    "acf" : {
+      "pluginName" : "Advanced Custom Fields Pro",
+      "pluginFolder" : "acf",
+      "pluginFile" : "acf.php",
+      "embed" : true
+    }
+  },
+  "requiredPlugins" : {},
+  "pages" : {
+    "front-page" : {
+      "pageName" : "Home",
+      "pageContent" : "",
+      "pageTemplate" : "front-page.php",
+      "pageStatus" : "publish",
+      "pageAuthorID" : 1
+    },
+    "blog" : {
+      "pageName" : "Blog",
+      "pageContent" : "",
+      "pageTemplate" : "",
+      "pageStatus" : "publish",
+      "pageAuthorID" : 1
+    }
+  }
+}

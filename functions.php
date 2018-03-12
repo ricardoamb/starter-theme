@@ -1,13 +1,20 @@
 <?php
-/**
- * Starter Theme functions and definitions
- *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package Starter_Theme
- */
-
 require 'inc/theme-functions.php';
+theme_buildin_plugins();
+
+function acf_adjustment() {
+	echo '
+	<style>
+		.acf-columns-2 {
+			margin: 0;
+		}
+	    .acf-column-2 {
+			display: none !important;
+	    } 
+  	</style>
+	';
+}
+add_action('admin_head', 'acf_adjustment');
 
 if (!function_exists( 'starter_theme_setup' ) ) :
 	function starter_theme_setup() {
@@ -59,16 +66,6 @@ function starter_theme_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'starter_theme_widgets_init' );
-/**
- * Enqueue scripts and styles.
- */
-function starter_theme_scripts() {
-	wp_enqueue_style( 'starter-theme-style', get_stylesheet_uri() );
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script('comment-reply');
-	}
-}
-add_action( 'wp_enqueue_scripts', 'starter_theme_scripts' );
 
 require get_template_directory() . '/inc/custom-header.php';
 require get_template_directory() . '/inc/template-tags.php';
