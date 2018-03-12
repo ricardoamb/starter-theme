@@ -4,3 +4,24 @@
 
 a
   text-decoration: none
+
+blockquote
+  font-size: 20*$px
+
+ul, ol
+  padding: 0
+  margin: 0 0 $phi*1em $phi*1em
+
+@include htags()
+
+.site-header
+  @include guide
+
+.hentry, .comments-area, .page-header, .site-main, .post-navigation, .paging-navigation
+  @include guide
+
+.widget
+  @include guide
+
+.site-footer
+  @include guide

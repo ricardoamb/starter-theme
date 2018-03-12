@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 // Style Tasks Require
 var styleSource = 'src/sass/app.sass',
     styleDist = './assets/css/',
-    styleWatch = 'src/sass/**/**/*.sass';
+    styleWatch = 'src/sass/**/**/**/*.sass';
 
 var themeSource = 'sass/style.scss',
     themeDist = './',
@@ -79,6 +79,8 @@ gulp.task ( 'default' , [
 
 gulp.task('watch',['default'],function(){
     gulp.watch(themeWatch,['theme']);
+    gulp.watch(themeWatch,['style']);
+    gulp.watch(styleWatch,['theme']);
     gulp.watch(styleWatch,['style']);
     gulp.watch(jsWatch,['js']);
 });

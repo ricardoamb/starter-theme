@@ -42,6 +42,11 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 @import "normalize";
 
 /*--------------------------------------------------------------
+# Custom Vars & Mixins
+--------------------------------------------------------------*/
+@import "../src/sass/base/vars-mixins";
+
+/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 @import "typography/typography";
@@ -95,3 +100,8 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+/*--------------------------------------------------------------
+# Custom Styles
+--------------------------------------------------------------*/
+@import "../src/sass/base/styles";
