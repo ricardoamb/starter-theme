@@ -75,6 +75,7 @@ if($line === "Theme Name: Sentapúa initial sketch"){
 	fwrite($style_file, 'Author: ' . $data['author'] . PHP_EOL);
 	fwrite($style_file, 'Author URI: ' . $data['authorURI'] . PHP_EOL);
 	fwrite($style_file, 'Version: ' . $data['version'] . PHP_EOL);
+	fwrite($style_file, 'Description: ' . $data['description'] . PHP_EOL);
 	fwrite($style_file, 'License: ' . $data['license'] . PHP_EOL);
 	fwrite($style_file, 'License URI: ' . $data['licenseURI'] . PHP_EOL);
 	fwrite($style_file, 'Text Domain: ' . $data['textDomain'] . PHP_EOL);

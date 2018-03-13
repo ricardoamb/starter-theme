@@ -20,8 +20,6 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'starter-theme' ); ?></a>
-
     <?php get_template_part('inc/template-parts/content','header');?>
-
     <div id="content" class="site-content container-fluid">
         <div class="row">
